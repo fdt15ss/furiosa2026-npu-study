@@ -5,6 +5,12 @@ furiosa-llm serve furiosa-ai/Llama-3.1-8B-Instruct(x)
 furiosa-llm serve furiosa-ai/Meta-Llama-3.1-8B-Instruct-FP8-dynamic
 furiosa-llm serve furiosa-ai/Qwen3.5-0.8B (x)
 furiosa-llm serve furiosa-ai/Qwen3-4B-FP8
+
+furiosa-llm serve furiosa-ai/Qwen3-4B-FP8 \
+    --devices npu:7 \
+    --host 0.0.0.0 \
+    --port 8000
+    
 """
 
 from openai import OpenAI
