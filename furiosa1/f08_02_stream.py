@@ -1,4 +1,4 @@
-from a_kingkeras import get_llm
+from furiosa1.a_kingkeras import get_llm
 
 llm = get_llm()
 
