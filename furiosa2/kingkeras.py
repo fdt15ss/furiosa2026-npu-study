@@ -2,7 +2,10 @@
 furiosa-llm serve furiosa-ai/Qwen3-8B-FP8 \
     --devices npu:7 \
     --host 0.0.0.0 \
-    --port 8000
+    --port 8000 \
+    --enable-overlap-scheduling \
+    --enable-auto-tool-choice \
+    --tool-call-parser-hermes
 """
 
 import time
